@@ -3,7 +3,7 @@ node_modules/
 
 .DS_Store
 .cache
-.project
+.projecttignore
 .settings
 .tmproj
 nbproject
