@@ -1,0 +1,22 @@
+{
+  "name": "web-exp",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack && cd dist && static-server"
+  },
+  "keywords": [],
+  "author": "Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "node-static": "^0.7.10"
+  }
+}
