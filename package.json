@@ -6,13 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack && cd dist && static-server"
+    "buildenv": "NODE_ENV=development webpack",
+    "server": "node server.js",
+    "noenv": "cd dist/ && static-server & webpack",
+    "start": "NODE_ENV=development webpack & node server.js"
   },
   "keywords": [],
   "author": "Alex",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.9.1",
+    "webpack": "^4.10.1",
     "webpack-cli": "^2.1.4"
   },
   "dependencies": {

@@ -3,8 +3,12 @@
 import _ from 'lodash';
 
 let welcome = require('../files/welcome');
-let a = 15;
-//exports.a = a;
+
+let Hello = welcome.Hello;
+
+export {Hello as Hi};
+export let a = 15;
+export let page = 'index';
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -84,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
   aside.appendChild(mainmenu);
 
   try {
-    content.appendChild(welcome('to the test page'));
+    content.appendChild(welcome.ElmPar('to the test page'));
   } catch (error) {
     let err = document.createElement('p');
     err.innerHTML = 'Error no data'
@@ -99,5 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     mainmenu.appendChild(component('li', 'main-menu__item', message));  
   }
-
 });
+
+
+

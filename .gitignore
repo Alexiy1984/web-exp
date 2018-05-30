@@ -16,3 +16,7 @@ Thumbs.db
 *.swo
 *.swp
 *.vi
+
+# Page-maps
+dist/index.js.map
+dist/test.js.map
